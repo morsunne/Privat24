@@ -1,0 +1,116 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Actual end),Custom field (Actual start),Custom field (Affected services),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Epic Color),Custom field (Epic Link),Custom field (Epic Name),Custom field (Epic Status),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Custom field (Request language),Custom field (Request participants),Custom field (Responders),Satisfaction rating,Custom field (Start date),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Time to first response),Custom field (Time to resolution),Custom field (Total forms),Custom field (Work category),Custom field ([CHART] Date of First Response),Status Category
+"""Notifications"" page remains in Ukrainian in the English version of the app",PRIV-7,10075,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 2:21 PM,16/Jan/23 2:21 PM,16/Jan/23 2:44 PM,,,0,"*Preconditions:*
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application.
+# Authorize successfully into the system.
+# The language of the app is English.
+
+*Steps to reproduce:*
+
+# Tap ""Notifications"" in the footer.
+# Check the content of the ""Notifications"" page.
+
+*Expected result:* Since it’s the English version of the app, the content of the page should be in the English language.
+
+*Actual result:* The content with useful information for a user is provided in the Ukrainian language. ",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000gf:,,,,,,,,,,,,,,,,,,To Do
+"Charity funds in Charity in ""Services"" are listed in Ukrainian in the English version of the app",PRIV-6,10074,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 1:25 PM,16/Jan/23 1:25 PM,16/Jan/23 2:44 PM,,,0,"*Preconditions:*
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application.
+# Authorize successfully into the system.
+# The language of the app is English.
+
+*Steps to reproduce:*
+
+# Tap ""Services"" in the footer.
+# Select the ""Charity"" category.
+
+*Expected result:* The list of the Ukrainian charity funds and their descriptions are presented in English.
+
+*Actual result:* The title of the page is in English, but the list of charity funds and their descriptions are given in Ukrainian. ",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000g7:,,,,,,,,,,,,,,,,,,To Do
+"Payments list in ""Services"" in given in Ukrainian in the English version of the app",PRIV-5,10073,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 1:21 PM,16/Jan/23 1:21 PM,16/Jan/23 1:22 PM,,,0,"*Preconditions:*
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application.
+# Authorize successfully into the system.
+# The language of the app is English.
+
+*Steps to reproduce:*
+
+# Tap ""Services"" in the footer.
+# Select the ""Payments"" category.
+
+*Expected result:* The title, the list of payments and the button “Based on banking details“ are given in English.
+
+*Actual result:* The title, the list of payments and the “Based on banking details“ button are given in Ukrainian.",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000fz:,,,,,,,,,,,,,,,,,,To Do
+"LycaMobile page in ""Services"" is in Ukrainian and contains Russian text in the English version of the app",PRIV-4,10072,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 1:15 PM,16/Jan/23 1:15 PM,16/Jan/23 1:15 PM,,,0,"*Preconditions:*
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application.
+# Authorize successfully into the system.
+# The language of the app is English.
+
+*Steps to reproduce:*
+
+# Tap ""Services"" in the footer.
+# Select the ""Connection"" category. 
+# On the new page, choose “LycaMobile”.
+
+*Expected result:* The page should open in English: the input fields, descriptions and placeholders are stated in English. The “Continue“ button is in English.
+
+*Actual result:* The input fields, descriptions and placeholders are stated in Ukrainian. The “Purpose“ input field is automatically filled out in Russian. The “Continue“ button is in Ukrainian.",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000fr:,,,,,,,,,,,,,,,,,,To Do
+Volia internet provider page contains Russian and Ukrainian text in the app English version ,PRIV-3,10071,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 12:33 PM,16/Jan/23 12:33 PM,16/Jan/23 2:44 PM,,,0,"*Preconditions:*
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application.
+# Authorize successfully into the system.
+# The language of the app is English.
+
+*Steps to reproduce:*
+
+# Tap ""Services"" in the footer.
+# Select the ""Connection"" category. 
+# On the new page, choose “Volia” internet provider.
+
+*Expected result:* Page opens with the field “Enter your personal account No.“. The title of the page says “VOLIA, individuals, TV and/or Internet services“. Below the input field, there is a hint on how many characters the account should include.
+
+*Actual result:* The input field and hint are stated in Ukrainian. The page title contains Russian and Ukrainian words, and is cut down. ",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000fj:,,,,,,,,,,,,,,,,,,To Do
+Internet providers pages remain in Ukrainian in the English version of the app,PRIV-2,10070,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 12:12 PM,16/Jan/23 12:12 PM,16/Jan/23 2:44 PM,,,0,"*Preconditions:*
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application.
+# Authorize successfully into the system.
+# The language of the app is English.
+
+*Steps to reproduce:*
+
+# Tap ""Services"" in the footer.
+# Choose the ""Connection"" category. 
+# On the new page, choose any internet provider.
+
+*Expected result:* Page of every internet provider contains the field “Enter your personal account No.“ and/or additional input fields. The title of the page, the name of the input field and placeholders are in English, a hint on how many characters the account should include is also in English.
+
+*Actual result:* The input fields and hint are stated in Ukrainian, as well as the rest of information contained on the page of an internet provider. ",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000fb:,,,,,,,,,,,,,,,,,,To Do
+"Cards names in ""Wallet"" remain in Ukrainian after language switch to English",PRIV-1,10069,Bug,To Do,PRIV,Privat24,software,Mariia Chala,632c11be2eaaa5dcfa126c28,,Medium,,,,Mariia Chala,632c11be2eaaa5dcfa126c28,Mariia Chala,632c11be2eaaa5dcfa126c28,16/Jan/23 11:49 AM,16/Jan/23 11:49 AM,16/Jan/23 11:49 AM,,,0,"*Preconditions:*  
+
+# Install the Privat24 mobile application on a mobile device
+# Connect the device to the Internet.
+# Launch the application. 
+# Authorize successfully into the system.
+
+*Steps to reproduce:*
+
+# In the upper left corner tap the user icon. 
+# In the sidebar choose “Налаштування“ (Settings), and tap “Мова“ (Language). 
+# In the pop-up menu choose “English”.
+
+*Expected result:* The main page “Wallet” should open. The language of the app switched to English. 
+
+*Actual result:* The names of the user’s cards are still in Ukrainian.",Samsung Galaxy A52 Android v.11,Mariia Chala,632c11be2eaaa5dcfa126c28,,,,,,,,,,,,,,,,,,,,,,,,,,0|i000f3:,,,,,,,,,,,,,,,,,,To Do
