@@ -1,0 +1,119 @@
+1. Title: Registration
+Description: A user signs up to the system.
+Actors: System, user
+Preconditions: 
+1) The mobile application is installed on the mobile device. 
+2) The device is connected to the Internet. 
+3) The user has an active PrivatBank card, but is not registered in the app.
+Basic flow: 
+1) A user launches the mobile application on the mobile device;  
+2) A user taps "Registration". The system displays the registration form. 
+3) A user enters their mobile phone number. 
+4) The system initiates registration confirmation. The user receives a call from the bank. 
+5) A user enters the PIN code of the active PrivatBank card. The system processes and confirms the correctness of the PIN code. 
+6) A user creates a password of at least 6 and up to a maximum of 15 characters, consisting of numbers and letters. The system accepts and remembers the password of a new user. 
+7) A user enters a valid e-mail address. 
+8) The system sends a letter to the specified mail with a confirmation of login to the application. The user must tap "Confirm" to continue registration.
+9) The system redirects the user to the application. 
+10) A user puts a "tick" against "I am familiar with the rules for providing banking services" and taps "Continue"
+11) The system makes a record in the authorization history.
+Result: The user is successfully authorized and can use the system.
+Alternative flow: 
+4a - if the user does not receive a call from the bank, an SMS with a code is sent. 
+5a - the number of attempts to enter the PIN code is exhausted, the sign-in is blocked for a certain time. 
+5b - if the user has more than one card, it is necessary to select the card from the list and enter the PIN to the selected card. 
+6a - The system does not accept the password if it is less than 6 characters, does not contain letters or numbers, or contains few numbers or letters. At the bottom of the screen there is a hint how strong the password is.  
+
+*
+
+2. Title: Authorization
+Description: A registered user signs in to the system.
+Actors: System, user
+Preconditions: 
+1) The mobile application is installed on the mobile device. 
+2) The device is connected to the Internet. 
+3) The user is registered in the application.
+Basic flow: 
+1) The user launches the mobile application on the mobile device; 
+2) The system identifies the registered user and displays the "Session Recovery" window. 
+3) The user enters the password, taps "Continue". The system checks the password.
+4) The system accepts the password, makes a record in the authorization history. 
+5) The user proceeds to the "Wallet" page with active cards.  
+Result: The user is successfully authorized and can use the system.
+Alternative flow: 
+3a - if the user does not remember the password, the "Forgot password?" flow is launched.
+3b1 - if the biometric authorization option is enabled on the user's smartphone, the system displays the "Scan to confirm" window and a place to put a finger.
+3b2 - If the user does not want to scan the finger, it is possible to skip this option and return to entering the password: tap the "back" button or the "Use password" button.
+4a - an incorrect password is entered, the message "Incorrect password" is displayed. Go to step 2.
+
+*
+
+3. Title: Forgot password?
+Description: A user restores access to their account.
+Actors: System, user
+Preconditions: 
+1) The mobile application is installed on the mobile device. 
+2) The device is connected to the Internet. 
+3) The user is registered in the application. 
+Basic flow: 
+1) A user launches the mobile application on the mobile device; 
+2) The system identifies the registered user and displays the "Restore session" window. 
+3) The user taps "Forgot password?". 
+4) The system initiates a call to the user's mobile phone for verification.
+5) After the call, the page opens where the user enters the PIN code of the PrivatBank card.
+6) The system displays a form to restore access to the account where there is the "New password" input field.
+7) The user enters a new password of at least 6 and up to a maximum of 15 characters, consisting of numbers and letters. The system accepts and remembers the password of the user. 
+8) The system redirects to the main page. The "Authorization" flow is launched.
+Result: The user created a valid password and can sign in successfully. 
+Alternative flow: 
+5a - if the user has more than one card, it is necessary to select the card from the list and enter the PIN to the selected card.  
+7a - The system does not accept the password if it is less than 6 characters, does not contain letters or numbers, or contains few numbers or letters. At the bottom of the screen there is a hint how strong the password is.  
+
+*
+
+4. Title: Transfer of funds to a card
+Description: User sends funds from their card to another user's card
+Actors: System, user
+Preconditions: 
+1) The mobile application is installed on the mobile device. 
+2) The device is connected to the Internet. 
+3) The user is registered in the application 
+4) The user's card has funds on it.
+Basic flow: 
+1) The user launches the mobile application on the mobile device; 
+2) The system identifies the registered user and displays the "Session Recovery" page. 
+3) The "Authorization" flow is launched. 
+4) In the footer, the user taps "Services", chooses category "Transfer", then "Transfer to a card". 
+5) On the new page, the user selects the card from which the user wants to make a transfer. 
+6) The user enters the recipient's card number and the transfer amount, taps "Continue". 
+7) The system processes the request and indicates the actual transfer amount (including commission). The user taps "Confirm". 
+8) The system processes the request and displays a message about the successful transfer of funds to another user's card. 
+Result: Funds were successfully transfered to another user's card.
+Alternative flow: 
+7a - the system displays an error message. Insufficient funds on the account. Go to step 6. 
+8a - the system displays an error message. Result: funds have not been sent, the transaction is canceled. Go to step 6.
+
+*
+
+5. Title: Mobile top-up
+Description: Top-up operation for mobile phone account
+Actors: System, user
+Preconditions: 
+1) The mobile application is installed on the mobile device. 
+2) The device is connected to the Internet. 
+3) The user is registered in the application 
+4) Active user card has funds.
+Basic flow: 
+1) The user launches the mobile application on the mobile device; 
+2) The system identifies the registered user and displays the "Session Recovery" window. 
+3) The "Authorization" flow is launched. 
+4) The user taps "Services" in the footer, chooses category "Connection", "Mobile top-up". 
+5) The user selects the card from which the user wants to make a transfer. 
+6) The system automatically fills in the user's phone number linked to the card. 
+7) The user enters the amount or selects the amount from those offered below the input field, taps "Continue". 
+8) The system processes the request and indicates the actual amount of the transfer (including commission). The user taps "Confirm". 
+9) The system processes the request and displays a message about successful top-up.
+Alternative flow: 
+6a - if the user wants to top up not their mobile phone account, but the account of another person, they click on the phone number input field. The system clears the field, displays a virtual keyboard for input. 
+8a - the system displays an error message. Insufficient funds for mobile top-up. Go to step 5. 
+
